@@ -1,0 +1,76 @@
+.avatar {
+  position: fixed;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.avatar.about {
+  width: 37rem;
+  height: 37rem;
+  opacity: 0.75;
+  border-radius: 50%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.avatar.skills {
+  height: 50vh;
+  bottom: -0.1vh;
+  left: -1.5rem;
+  transform: translateX(0%) scaleX(-1);
+}
+
+.shadow-overlay-skills {
+  height: 100vh;
+  width: 100vh;
+  display: block;
+  position: fixed;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0));
+  z-index: -1;
+}
+
+@media (max-width: 1100px) {
+  .avatar.skills {
+    z-index: -5;
+  }
+
+  .avatar.about {
+    top: 50%;
+  }
+}
+
+@media (max-width: 700px) {
+  .avatar.skills {
+    display: none;
+  }
+
+  .avatar.about {
+    width: 30rem;
+    height: 30rem;
+    opacity: 1;
+    z-index: -5;
+  }
+}
+
+@media (max-width: 650px) {
+  .avatar.skills {
+    display: none;
+  }
+
+  .avatar.about {
+    width: 20rem;
+    height: 20rem;
+    opacity: 1;
+    z-index: -5;
+  }
+}
+
+@media (max-height: 700px) {
+  .avatar.about {
+    width: 15rem;
+    height: 15rem;
+    opacity: 1;
+    z-index: -5;
+  }
+}
