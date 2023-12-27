@@ -1,7 +1,7 @@
 {
   "name": "andrejnevesjr.github.io",
   "version": "0.1.0",
-  "homepage": "https://andrejnevesjr.github.io",
+  "homepage": ".",
   "private": false,
   "dependencies": {
     "classnames": "^2.3.2",
